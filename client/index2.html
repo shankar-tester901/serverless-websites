@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature and News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Times+New:200'
+      rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+
+  </head>
+  <body onload="getCatNews_Stream()">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <fieldset>
+
+              <input id="city" name="city" type="text" class="ghost-input"
+                placeholder="Enter a City" required>
+              <button id="submit" type="button" class="btn btn-info btn-lg"
+                onclick="getWeather();return false;">Get
+                Weather</button>
+
+
+              <div>
+                <p id="weather_detail"></p>
+              </div>
+
+
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <button type="button" class="btn btn-primary btn-lg" id="submit"
+              onclick="getAppleNews();return false;">Get
+              Tech Magazines</button>
+
+            <div>
+
+              <div class="table-responsive">
+                <div id="newsDetails"></div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <div id="news_stream">
+
+            </div>
+
+            <div>
+
+              <div class="table-responsive">
+                <div id="newsDetails"></div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,14 @@
+{
+	"name": "weather_serverless",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "shankarr+1004@zohocorp.com",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"ejs": "^3.0.1",
+		"express": "^4.17.1",
+		"newsapi": "^2.4.0",
+		"request": "^2.88.0",
+		"zcatalyst-sdk-node": "latest"
+	}
+}
