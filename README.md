@@ -26,8 +26,8 @@ So what really happens in this program?
 When the index.html page loads, it calls an onload function - getCatNews_Stream . 
 You will find the implementation of this function in the main.js file.
 So when you look that up, you find that the following is being invoked in the main.js file.
-Look at line 34 carefully.
-That is the point when the server (index.js) gets invoked and subsequently when the response comes back, it is 
+It is an Ajax request ie the page need not refresh on the client .. just the div that is relevant for getting the Cat news
+That is the function where the server (index.js) gets invoked and subsequently when the response comes back, it is 
 replaced in the news_stream div in the client. Simple.
 
 ```
